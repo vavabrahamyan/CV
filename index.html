@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./images/icon_16x16.jpg" sizes="16x16">
+    <link rel="icon" type="image/jpg" href="./images/icon_32x32.jpg" sizes="32x32">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Responsive resume cv</title>
+</head>
+
+<body>
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav-logo">vavabrahamyan</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">
+                            <i class='bx bxs-home nav-icon'></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#profile" class="nav-link">
+                            <i class='bx bx-user nav-icon'></i>Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">
+                            <i class='bx bxs-book-alt nav-icon'></i>Education
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">
+                            <i class='bx bxs-receipt nav-icon'></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">
+                            <i class='bx bx-briefcase nav-icon'></i>Experiance
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#languages" class="nav-link">
+                            <i class='bx bxl-flickr nav-icon'></i>Languages
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="l-main bd-container" id='main-area'>
+        <div class="resume" id="cv-area">
+            <div class="resume-left">
+                <section class="home" id="home">
+
+                    <div class="home-container section bd-grid">
+                        <div class="home-data bd-grid">
+                            <img src="./images/1_1.jpg" alt="my_Image" class="home-image">
+                            <h1 class="home-title">Vahe <b>Abrahamyan</b></h1>
+                            <h3 class="home-profession">Front-end developer</h3>
+                            <div>
+                                <a href='./pdf/cv-dark-mode.pdf' download class="home-button-movil" id="downloadPDF">Download</a>
+                            </div>
+                            <div class="home-address bg-grid ">
+                                <span class="home-information ">
+                                    <i class='bx bx-map-pin home-icon my-location' ></i> Artashisyan 57/12 ap.30 , Yerevan, Armenia
+                                </span>
+                                <span class="home-information my-email ">
+                                    <i class='bx bx-envelope home-icon' ></i> <p id="my-email ">vavabrahamyan@gmail.com </p><i class='bx bx-copy' title="copy email " onclick="copyToClipboard( '#my-email') "></i>
+                                </span>
+                                <span class="home-information my-phone ">
+                                    <i class='bx bx-phone home-icon' ></i> <p id="my-phone ">+374 99 27 28 30</p><i class='bx bx-copy' title="copy phone " onclick="copyToClipboard( '#my-phone') "></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <i class='bx bxs-moon change-theme' title='Theme' id='theme-button'></i>
+
+
+
+                    <!-- Download Button -->
+                    <i class='bx bxs-cloud-download generate-pdf' title="Generate PDF in A4 " id="resume-button"></i>
+
+                </section>
+
+                <section class="social section ">
+                    <h2 class="section-title ">Social</h2>
+                    <div class="social-container bg-grid ">
+                        <a href="https://bit.ly/3AwfB0W " target="_blank " class="social-link ">
+                            <i class='bx bxl-linkedin social-icon'></i>Follow Me
+                        </a>
+                        <a href="https://bit.ly/3yl6aPH " target="_blank " class="social-link ">
+                            <i class='bx bxl-facebook social-icon'></i></i>Follow Me
+                        </a>
+                        <a href="https://bit.ly/3xnJChu " target="_blank " class="social-link ">
+                            <i class='bx bxl-instagram social-icon'></i>Follow Me
+                        </a>
+                    </div>
+                </section>
+
+                <section class="skills section " id="skills ">
+                    <h2 class="section-title ">Skills</h2>
+
+                    <div class="skills-content bg-grid ">
+                        <ul class="skills-data ">
+                            <li class="skills-name ">
+                                <span class="skills-circle "></span>Html
+                            </li>
+                            <li class="skills-name ">
+                                <span class="skills-circle "></span>Css
+                            </li>
+                            <li class="skills-name ">
+                                <span class="skills-circle "></span>JavaScript
+                            </li>
+                        </ul>
+                        <ul class="skills-data ">
+                            <li class="skills-name ">
+                                <span class="skills-circle "></span>C#
+                            </li>
+                            <li class="skills-name ">
+                                <span class="skills-circle "></span>ASP.Net
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="languages section " id='languages'>
+                    <h2 class="section-title ">Languages</h2>
+                    <div class="leaguages-conteiner ">
+                        <ul class="languages-content bg-grid ">
+                            <li class="languages-name ">
+                                <span class="languages-circle "></span>Armenian
+                            </li>
+                            <li class="languages-name ">
+                                <span class="languages-circle "></span>English
+                            </li>
+                            <li class="languages-name ">
+                                <span class="languages-circle "></span>Russian
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="resume-right " id="resume-right ">
+                <!-- <section class="profile section " id="profile ">
+                    <h2 class="section-title ">Profile</h2>
+
+                    <p class="profile-description ">#description</p>
+                </section> -->
+
+                <section class="experiance section " id="experience ">
+                    <h2 class="section-title ">Experience</h2>
+                    <div class="experience-container bg-grid ">
+                        <div class="experience-content ">
+                            <div class="experience-time ">
+                                <span class="experience-rounder "></span>
+                            </div>
+                            <div class="eexperience-data bg-grid ">
+                                <h3 class="experience-title ">Front-end developer</h3>
+                                <span class="experience-company ">From 2020 to 2021 | Atero Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="education section " id="education ">
+                    <h2 class="section-title ">Education</h2>
+                    <div class="education-container bg-grid ">
+                        <div class="education-content ">
+                            <div class="education-time ">
+                                <span class="education-rounder "></span>
+                                <span class="education-line "></span>
+                            </div>
+                            <div class="education-data bg-grid ">
+                                <h3 class="education-title ">.Net Developer</h3>
+                                <span class="education-studies ">Microsoft Innovation Center</span>
+                                <span class="education-year ">2018 - 2020</span>
+                            </div>
+                        </div>
+                        <div class="education-content ">
+                            <div class="education-time ">
+                                <span class="education-rounder "></span>
+                            </div>
+                            <div class="education-data bg-grid ">
+                                <h3 class="education-title ">JavaScript Developer</h3>
+                                <span class="education-studies ">Atero Solution</span>
+                                <span class="education-year ">2020 - 2021</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="interests section ">
+                    <h2 class="section-title ">Interests</h2>
+                    <div class="interests-container bg-grid ">
+                        <div class="interests-content ">
+                            <i class='bx bx-headphone interests-icon'></i>
+                            <span class="interests-name ">Music</span>
+                        </div>
+                        <div class="interests-content ">
+                            <i class='bx bxs-film interests-icon'></i>
+                            <span class="interests-name ">Film</span>
+                        </div>
+                        <div class="interests-content ">
+                            <i class='bx bx-tennis-ball interests-icon'></i>
+                            <span class="interests-name ">Sport</span>
+                        </div>
+                        <div class="interests-content ">
+                            <i class='bx bx-car interests-icon'></i>
+                            <span class="interests-name ">Drive</span>
+                        </div>
+                        <div class="interests-content " id="i-t ">
+                            <i class='bx bx-book-open interests-icon'></i>
+                            <span class="interests-name ">Read</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <a href="# " class="scrolltop show-scroll" id="scroll-top">
+        <i class='bx bxs-up-arrow-square scrolltop-icon'></i>
+    </a>
+    <script src="./js/html2pdf.bundle.min.js "></script>
+    <script src="./js/sctipt.js "></script>
+</body>
+
+</html>
