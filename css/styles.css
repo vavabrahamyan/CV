@@ -94,13 +94,11 @@ body.scale-cv {
 }
 
 .scale-cv .home-title {
-    /* margin-top: 3rem; */
-    margin-top: 7rem;
+    margin-top: 3rem;
 }
 
 .scale-cv .home-profession {
-    /* margin-bottom: 3rem; */
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .scale-cv .bx-copy {
@@ -295,7 +293,8 @@ img {
         transition: .3s;
     }
     .home-address.bg-grid .bx-copy {
-        display: none;
+        right: 0;
+        font-size: 1.25rem;
     }
 }
 
@@ -438,13 +437,21 @@ img {
     color: var(--text-color);
 }
 
+.social-link .social-icon {}
+
 .social-link:hover {
     color: var(--title-color);
 }
 
 .social-icon {
     font-size: 1.2rem;
-    margin-right: .25rem;
+    margin-right: 1.25rem;
+    transition: .8s;
+}
+
+.social-link:hover .social-icon {
+    margin-right: 6.5rem;
+    transition: .8s;
 }
 
 .profile-description {

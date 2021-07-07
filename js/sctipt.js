@@ -72,6 +72,8 @@ if (selectedTheme) {
 
 }
 
+let pdfLink = './pdf/cv-light-mode.pdf';
+
 
 themeButton.addEventListener('click', () => {
     document.body.classList.toggle(darkTheme)
@@ -79,11 +81,15 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 
-    console.log(selectedTheme)
+    console.log(document.body.classList)
 
-    resumeLink = selectedTheme === 'dark' ? './pdf/cv-dark-mode.pdf' : './pdf/cv-light-mode.pdf'
+    if (document.body.classList.length !== 0) {
+        pdfLink = './pdf/cv-dark-mode.pdf'
+    } else {
+        pdfLink = './pdf/cv-light-mode.pdf'
+    }
 
-    console.log(resumeLink)
+    document.getElementById('downloadPDF').setAttribute('href', pdfLink);
 })
 
 
