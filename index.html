@@ -11,6 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
     <title>Resume</title>
 </head>
@@ -70,18 +72,37 @@
                             <img src="./images/1_1.jpg" alt="my_Image" class="home-image">
                             <h1 class="home-title">Vahe <b>Abrahamyan</b></h1>
                             <h3 class="home-profession">Front-end developer</h3>
-                            <div>
-                                <a href='./pdf/cv-light-mode.pdf' download class="home-button-movil" id="downloadPDF">Download</a>
+                            <!-- alert about coping -->
+
+                            <div id="alert-oncopy-email" class="_d-none">
+                                <div class="text-centered">
+                                    <h3>email is copied</h3>
+                                </div>
                             </div>
+                            <div id="alert-oncopy-phone" class="_d-none">
+                                <div class="text-centered">
+                                    <h3>phone is copied</h3>
+                                </div>
+                            </div>
+                            <div id="download-button" >
+                                <a href='./pdf/cv-light-mode.pdf' download class="home-button-movil"
+                                    id="downloadPDF">Download</a>
+                            </div>
+
                             <div class="home-address bg-grid ">
                                 <span class="home-information ">
-                                    <i class='bx bx-map-pin home-icon my-location' ></i> Artashisyan 57/12 ap.30 , Yerevan, Armenia
+                                    <i class='bx bx-map-pin home-icon my-location'></i> Artashisyan 57/12 ap.30 ,
+                                    Yerevan, Armenia
                                 </span>
                                 <span class="home-information my-email ">
-                                    <i class='bx bx-envelope home-icon' ></i> <p id="my-email">vavabrahamyan@gmail.com </p><i class='bx bx-copy' title="copy email " onclick="copyToClipboard( '#my-email') "></i>
+                                    <i class='bx bx-envelope home-icon'></i>
+                                    <p id="my-email">vavabrahamyan@gmail.com </p><i class='bx bx-copy'
+                                        title="copy email " onclick="copyToClipboard( '#my-email'), alertAboutCopy('email')"></i>
                                 </span>
                                 <span class="home-information my-phone ">
-                                    <i class='bx bx-phone home-icon' ></i> <p id="my-phone">+374 99 27 28 30</p><i class='bx bx-copy' title="copy phone " onclick="copyToClipboard( '#my-phone') "></i>
+                                    <i class='bx bx-phone home-icon'></i>
+                                    <p id="my-phone">+374 99 27 28 30</p><i class='bx bx-copy' title="copy phone "
+                                        onclick="copyToClipboard( '#my-phone'), alertAboutCopy('phone') "></i>
                                 </span>
                             </div>
                         </div>

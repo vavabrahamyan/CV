@@ -161,3 +161,21 @@ function getWidth() {
         document.documentElement.clientWidth
     );
 }
+
+var alertAboutCopy = function (textType) {
+    let _tempId;
+    if (textType == 'email') {
+        _tempId = 'alert-oncopy-email';
+        console.log("email");
+    } else if (textType == 'phone') {
+        _tempId = 'alert-oncopy-phone';
+        console.log("phone");
+
+    }
+    document.getElementById(_tempId).className = "alert-oncopy animate__animated animate__bounceInLeft";
+    setTimeout(() => {
+        document.getElementById(_tempId).className = "alert-oncopy animate__animated animate__bounceOutRight";
+
+        setTimeout(()=>{document.getElementById(_tempId).className = "_d-none"}, 500);
+    }, 2000)
+}
