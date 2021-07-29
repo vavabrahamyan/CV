@@ -667,15 +667,9 @@ img {
     .generate-pdf {
         display: inline-block;
     }
-    .social-link .social-icon p{
-        display: none;
-    }
     .social-link:hover .social-icon {
-        margin-right: 66.7%;
+        margin-right: 68%;
         transition: 0.8s;
-    }
-    .social-link:hover .social-icon p{
-        display: block;
     }
 }
 
