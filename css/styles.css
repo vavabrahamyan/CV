@@ -282,17 +282,19 @@ img {
 .alert-oncopy {
     position: absolute;
     bottom: -1rem;
-    left: 27%;
-    width: 10rem;
-    height: 2rem;
-    background: #6a737b4d;
+    left: 50%;
     display: table;
-    border-radius: 3rem;
 }
 .alert-oncopy .text-centered {
+    position: relative;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+    left: -50%;
+    width: 10rem;
+    height: 2rem;
+    background: #6a737b4d;
+    border-radius: 3rem;
 }
 .alert-oncopy .text-centered h3 {
     font-size: 13px;
