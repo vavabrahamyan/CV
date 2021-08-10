@@ -461,9 +461,6 @@ img {
     color: var(--text-color);
 }
 
-.social-link .social-icon {
-}
-
 .social-link:hover {
     color: var(--title-color);
 }
@@ -671,6 +668,10 @@ img {
     }
     .social-link:hover .social-icon {
         margin-right: 68%;
+        transition: 0.8s;
+    }
+    .social-link:hover .social-icon.sendMeMessage {
+        margin-right: 55%;
         transition: 0.8s;
     }
 }
