@@ -298,12 +298,11 @@ img {
     width: 10rem;
     height: 2rem;
     background: #6a737b4d;
-    color: var(--title-color);
     border-radius: 3rem;
 }
 .alert-oncopy .text-centered h3 {
     font-size: 13px;
-    color: #4c4f59;
+    color: var(--title-color);
 }
 
 @media screen and (max-width: 968px) {
