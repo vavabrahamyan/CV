@@ -166,10 +166,8 @@ var alertAboutCopy = function (textType) {
     let _tempId;
     if (textType == 'email') {
         _tempId = 'alert-oncopy-email';
-        console.log("email");
     } else if (textType == 'phone') {
         _tempId = 'alert-oncopy-phone';
-        console.log("phone");
 
     }
     document.getElementById(_tempId).className = "alert-oncopy animate__animated animate__bounceInLeft";
@@ -179,3 +177,23 @@ var alertAboutCopy = function (textType) {
         setTimeout(()=>{document.getElementById(_tempId).className = "_d-none"}, 500);
     }, 2000)
 }
+
+const animated = document.getElementById('phone-animate');
+
+animated.addEventListener('animationend', () => {
+  console.log('Animation ended');
+  document.getElementById('phone-animate').className = 'bx bx-phone home-icon '
+  setTimeout(()=>{
+       document.getElementById('phone-animate').className = 'bx bx-phone home-icon animate__animated animate__tada'
+  },1000)
+});
+
+const animatedM = document.getElementById('email-animate');
+
+animatedM.addEventListener('animationend', () => {
+  console.log('Animation ended');
+  document.getElementById('email-animate').className = 'bx bx-envelope home-icon'
+  setTimeout(()=>{
+       document.getElementById('email-animate').className = 'bx bx-envelope home-icon animate__animated animate__tada'
+  },1000)
+});
