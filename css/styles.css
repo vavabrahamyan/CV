@@ -298,6 +298,7 @@ img {
     width: 10rem;
     height: 2rem;
     background: #6a737b4d;
+    color: var(--title-color);
     border-radius: 3rem;
 }
 .alert-oncopy .text-centered h3 {
