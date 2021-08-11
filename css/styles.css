@@ -643,6 +643,15 @@ img {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem 0.5rem;
     }
+    
+}
+@media screen and (max-width: 385px) {
+    .sendEmailAlert{
+        top: 403px;
+    }
+    .callMeAlert{
+        top: 442px;
+    }
 }
 
 @media screen and (min-width: 968px) {
