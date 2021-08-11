@@ -327,6 +327,20 @@ img {
     .l-header-x {
         display: none;
     }
+    .sendEmailAlert {
+        font-size: 10px;
+        position: absolute;
+        left: 25px;
+        top: 383px;
+        color: #6cc644;
+    }
+    .callMeAlert{
+        font-size: 10px;
+        position: absolute;
+        left: 25px;
+        top: 423px;
+        color: #6cc644;
+    }
 }
 
 .nav-logo,
@@ -699,5 +713,19 @@ img {
     .social-link:hover .social-icon.sendMeMessage {
         margin-right: 55%;
         transition: 0.8s;
+    }
+    .sendEmailAlert {
+        font-size: 10px;
+        position: absolute;
+        left: 7%;
+        top: 292px;
+        color: #6cc644;
+    }
+    .callMeAlert{
+        font-size: 10px;
+        position: absolute;
+        left: 7%;
+        top: 333px;
+        color: #6cc644;
     }
 }

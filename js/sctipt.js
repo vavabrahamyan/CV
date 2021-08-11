@@ -183,8 +183,10 @@ const animated = document.getElementById('phone-animate');
 animated.addEventListener('animationend', () => {
   console.log('Animation ended');
   document.getElementById('phone-animate').className = 'bx bx-phone home-icon '
+  document.getElementById('sendEmail').style.display = 'none'
   setTimeout(()=>{
        document.getElementById('phone-animate').className = 'bx bx-phone home-icon animate__animated animate__tada'
+       document.getElementById('sendEmail').style.display = 'block'
   },1000)
 });
 
@@ -193,7 +195,9 @@ const animatedM = document.getElementById('email-animate');
 animatedM.addEventListener('animationend', () => {
   console.log('Animation ended');
   document.getElementById('email-animate').className = 'bx bx-envelope home-icon'
+  document.getElementById('callME').style.display = 'block'
   setTimeout(()=>{
        document.getElementById('email-animate').className = 'bx bx-envelope home-icon animate__animated animate__tada'
+       document.getElementById('callME').style.display = 'none'
   },1000)
 });
